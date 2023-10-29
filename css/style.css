@@ -5,8 +5,18 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
+:root{
+    --primary-color: #141922;
+    --header-color: #080B12;
+    --footer-color: #282828;
+    --active-color: #ADFF2F;
+    --text-color: #76777C;
+    --ligth-color: #ffffff;
+    --dark-color: #000000;
+}
 /* --------------------
      debug_section
 -------------------- */
@@ -35,6 +45,18 @@
 .d-flex{
     display: flex;
 }
+
+.img{
+    width: 100%;
+}
+
+.btn{
+    padding: 0.5rem 2rem;
+    border: 1px solid;
+    color: var(--text-color);
+    border-radius: 2rem;
+    font-weight: bold;
+}
 /* --------------------
   /utilities_section
 -------------------- */
@@ -61,6 +83,19 @@
 .side_bar{
     width: 230px;
     height: 100%;
+    padding-left: 1rem;
+    background-color: var(--dark-color);
+
+& .container{
+    width: 80%;
+}
+}
+
+.side_bar .logo{
+    line-height: 90px;
+    & img{
+        vertical-align: middle;
+    }
 }
 
 /* app_content */
@@ -71,16 +106,24 @@
 .main_header{
     height: 90px;
     width: 100%;
+    background-color: var(--header-color);
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
 }
 
 .app_content_view{
     width: 100%;
     height: calc(100% - 90px);
+    background-color: var(--primary-color);
 }
 
 .footer_app{
     width: 100%;
     height: 90px;
+    position: relative;
+    z-index: 999;
+    background-color: var(--footer-color);
 }
 /* --------------------
      /general_css
