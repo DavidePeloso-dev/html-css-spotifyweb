@@ -129,6 +129,7 @@ img{
 
 .side_bar .home{
     border-left: 3px solid var(--active-color);
+    padding-left: calc(1rem - 3px);
 
     & a{
         color: var(--ligth-color);
