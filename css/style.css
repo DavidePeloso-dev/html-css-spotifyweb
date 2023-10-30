@@ -220,7 +220,6 @@ img{
     & img{
     border-radius: 50%;
     height: 100%;
-    object-fit: cover;
     }
 }
 
@@ -267,7 +266,7 @@ img{
 }
 
 .app_content .container{
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
 
     & h2{
         color: var(--ligth-color);
@@ -309,7 +308,7 @@ img{
     }
 }
 
-.app_content .for_you{
+.app_content .for_you, .app_content .popular{
     & h2{
         margin-bottom: 0.5rem;
     }
@@ -317,6 +316,10 @@ img{
     & h4{
         margin-bottom: 1.5rem;
     }
+}
+
+.popular img{
+    border-radius: 50%;
 }
 /* footer */
 .footer_app{
