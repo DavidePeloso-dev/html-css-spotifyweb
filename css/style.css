@@ -54,7 +54,7 @@
 .btn{
     padding: 0.5rem 1.8rem;
     border: 1px solid;
-    color: var(--text-color);
+    color: var(--ligth-color);
     border-radius: 2rem;
     font-weight: bold;
 }
@@ -107,6 +107,7 @@
 .side_bar .logo{
     line-height: 90px;
     padding-left: 1rem;
+
     & img{
         vertical-align: middle;
         width: 70%;
@@ -232,6 +233,27 @@
     width: 100%;
     height: calc(100% - 90px);
     background-color: var(--primary-color);
+}
+
+.navigation_menu{
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+
+    & a{
+        font-weight: bold;
+        color: var(--text-color);
+    }
+
+    & .active{
+        width: 30%;
+        height: 3px;
+        background-color: var(--active-color);
+        margin: auto;
+        margin-top: 0.3rem;
+    }
 }
 
 /* footer */
