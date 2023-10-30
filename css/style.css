@@ -266,7 +266,7 @@ img{
     }
 }
 
-.recent .container{
+.app_content .container{
     padding: 1rem 2rem 1rem 1rem;
 
     & h2{
@@ -278,6 +278,11 @@ img{
         flex-wrap: wrap;
         margin: 0 -0.25rem;
     }
+
+    & h4{
+        color: var(--text-color);
+        font-size: 0.8rem;
+    }
 }
 
 .card{
@@ -287,11 +292,6 @@ img{
         color: var(--ligth-color);
         margin: 1rem 0 0.5rem;
         font-size: 1rem;
-    }
-
-    & h4{
-        color: var(--text-color);
-        font-size: 0.8rem;
     }
 
     & .album{
@@ -309,6 +309,15 @@ img{
     }
 }
 
+.app_content .for_you{
+    & h2{
+        margin-bottom: 0.5rem;
+    }
+
+    & h4{
+        margin-bottom: 1.5rem;
+    }
+}
 /* footer */
 .footer_app{
     width: 100%;
