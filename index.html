@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body class="">
 
     <div class="wrapper">
         <section class="main_viewport">
             <div class="container d-flex">
                 <div class="side_bar">
-                    <div class="container">
-                        <div class="logo">
-                            <img src="./img/logo.svg" alt="">
+                    <div class="menu_container d-flex">
+                        <div class="menu_up">
+                            <div class="logo">
+                                <img class="logo_lg" src="./img/logo.svg" alt="">
+                                <img class="logo_sm" src="./img/logo-small.svg" alt="">
+                            </div>
+                            <ul>
+                                <li class="home">
+                                    <div class="element_list d-flex">
+                                        <a href=""><img src="./img/home.svg" alt=""></a>
+                                        <a class="hide" href="">Home</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="element_list d-flex">
+                                        <a href=""><img src="./img/search.svg" alt=""></a>
+                                        <a class="hide" href="">Cerca</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="element_list d-flex">
+                                        <a href=""><img src="./img/libreria.svg" alt=""></a>
+                                        <a class="hide" href="">La tua libreria</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h3 class="hide">PLAYLIST</h3>
+                            <ul class="playlist_list hide">
+                                <li>
+                                    <a class="d-flex action" href="">
+                                        <div class="square">&plus;</div>
+                                        Crea Playlist
+                                    </a>
+                                </li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                                <li><a href="">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_down">
+                            <div class="download_app d-flex">
+                                <a href=""><img class="download" src="./img/download.svg" alt=""></a>
+                                <a class="hide" href="">Installa app</a>
+                            </div>
+                            <div class="user d-flex">
+                                <div class="user_icon d-flex">
+                                    <img src="./img/profile.svg" alt="">
+                                </div>
+                                <div class="user_name hide">John Doe</div>
+                            </div>    
                         </div>
                     </div>
 
                 </div>
                 <div class="app_content">
                     <header class="main_header d-flex">
-                        <div class="action">
+                        <div>
                             <a class="btn" href="">EFFETTUA L'UPGRADE</a>
                         </div>
                     </header>
@@ -42,6 +97,7 @@
         </footer>
         <!-- /.footer_app -->
     </div>
-    
+
 </body>
+
 </html>
