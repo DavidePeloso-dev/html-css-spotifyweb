@@ -49,6 +49,7 @@
 
 img{
     width: 100%;
+    display: block;
 }
 
 .btn{
@@ -65,6 +66,14 @@ img{
 
 .col-2{
     width: calc(100% / 12 *2);
+}
+
+.col-3{
+    width: calc(100% / 12 * 3);
+}
+
+.col-5{
+    width: calc(100% / 12 * 5);
 }
 /* --------------------
   /utilities_section
@@ -113,8 +122,9 @@ img{
 }
 
 .side_bar .logo{
-    line-height: 90px;
+    height: 90px;
     padding-left: 1rem;
+    align-items: center;
 
     & img{
         vertical-align: middle;
@@ -328,6 +338,93 @@ img{
     position: relative;
     z-index: 999;
     background-color: var(--footer-color);
+    padding: 1rem 0.5rem;
+
+    & .container{
+        height: 100%;
+        width: 100%;
+    }
+
+    & .row{
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .menu_left, .menu_center, .menu_right{
+        height: inherit;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+.menu_left .album{
+    align-items: center;
+    gap: 0.5rem;
+
+    & img{
+        width: 50px;
+        aspect-ratio: 1;
+    }
+
+    & h3{
+        color: var(--ligth-color);
+        font-size: 1rem;
+    }
+
+    & h4{
+        color: var(--text-color);
+        font-size: 0.8rem;
+    }
+}
+
+.menu_left .function{
+    gap: 1rem;
+    color: var(--text-color);
+}
+
+.menu_center{
+    padding: 0 1rem;
+}
+
+.menu_center .function{
+    gap: 1.5rem;
+    color: var(--ligth-color);
+    justify-content: center;
+    align-items: center;
+
+    & .play{
+        font-size: 2rem;
+    }
+}
+
+.menu_center .time_line{
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--active-text);
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    width: 100%;
+
+    & .time_line_component{
+        width: 80%;
+        height: 5px;
+        background-color: var(--text-color);
+        margin: auto;
+        border-radius: 3px;
+        position: relative;
+    }
+
+    & .track{
+        width: 25%;
+        height: 5px;
+        border-radius: 3px;
+        background-color: var(--active-text);
+        top: 0;
+        left: 0;
+    }
 }
 /* --------------------
      /general_css
@@ -347,6 +444,11 @@ img{
     .col-sm-6{
         width: 50%;
     }
+
+    .menu_left .function{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 552px) {  
@@ -354,8 +456,8 @@ img{
         width: calc(100% - 50px);
     }
 
-    .logo{
-        display: flex;
+    .side_bar .logo{
+        height: 60px;
     }
 
     .logo_sm{
@@ -367,7 +469,7 @@ img{
         display: none;
     }
 
-    .side_bar li, .menu_down, .side_bar .logo{
+    .side_bar li, .menu_down, .side_bar .logo, .side_bar .home{
     padding-left: 0;
     padding-right: 0;
    }
