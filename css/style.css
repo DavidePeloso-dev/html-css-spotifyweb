@@ -6,6 +6,8 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+
+
 }
 
 :root{
@@ -100,6 +102,10 @@ img{
     height: 100%;
     background-color: var(--dark-color);
     overflow-y: auto;
+
+    &::-webkit-scrollbar{
+        width: 0px;
+    }
 
     & h3{
         color: var(--ligth-color);
@@ -233,6 +239,10 @@ img{
     & .recent{
         overflow-x: auto;
         background-color: var(--primary-color);
+
+        &::-webkit-scrollbar{
+            width: 0px;
+        }
     }
 }
 
@@ -250,6 +260,21 @@ img{
     height: calc(100% - 90px);
     background-color: var(--primary-color);
     overflow-y: auto;
+
+    &::-webkit-scrollbar{
+        width: 5px;
+        margin: 2px;
+    }
+
+    &::-webkit-scrollbar-track{
+        background-color: var(--ligth-color);
+        border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--text-color);
+        border-radius: 3px;
+    }
 }
 
 .navigation_menu{
