@@ -280,7 +280,7 @@ img{
 .navigation_menu{
     gap: 1.5rem;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
     flex-wrap: wrap;
     font-size: 0.8rem;
 
@@ -563,6 +563,12 @@ img{
 
     .user, .download_app, .element_list, .logo, .menu_container{
         justify-content: center;
+    }
+}
+
+@media screen and (max-height: 221px) {
+    .btn{
+        visibility: hidden;
     }
 }
 /* #endregion */ 
