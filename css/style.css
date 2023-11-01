@@ -655,9 +655,8 @@ img{
 .navigation_menu {
     animation-name: landing;
     animation-duration: 3s;
-    animation-delay: 0.5s;
     position: relative;
-    bottom: 3rem;
+    bottom: 6rem;
     animation-fill-mode: forwards;
 }
 
