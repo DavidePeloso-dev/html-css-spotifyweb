@@ -283,6 +283,9 @@ img{
     padding: 1rem;
     flex-wrap: wrap;
     font-size: 0.8rem;
+    & li{
+        position: relative;
+    }
 
     & a{
         font-weight: bold;
@@ -619,6 +622,23 @@ img{
 
     & .pointer{
         visibility: visible;
+    }
+}
+/* #endregion */
+
+/* #region animation */
+.navigation_menu {
+    animation-name: landing;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    position: relative;
+    bottom: 3rem;
+    animation-fill-mode: forwards;
+}
+
+@keyframes landing {
+    to{ 
+            bottom: 0;
     }
 }
 /* #endregion */
