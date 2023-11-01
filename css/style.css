@@ -385,7 +385,6 @@ img{
     }
 
     & .menu_left, .menu_center{
-        height: inherit;
         align-items: center;
         gap: 1rem;
     }
@@ -445,7 +444,7 @@ img{
     }
 }
 
-.menu_center .time_line{
+.time_line{
     align-items: center;
     gap: 0.5rem;
     color: var(--active-text);
@@ -462,6 +461,10 @@ img{
         border-radius: 3px;
         position: relative;
     }
+}
+
+.time_line_xxs{
+    display: none;
 }
 
 .track{
@@ -589,8 +592,12 @@ img{
 }
 
 @media screen and (max-width:400px){
-    .col-xs-12{
+    .col-xxs-11{
         min-width: calc(100% / 12 * 11);
+    }
+
+    .hide_xxs{
+        display: none;
     }
 
     .main_header .btn{
@@ -599,6 +606,14 @@ img{
         &:hover{
             font-size: 1rem;
         }
+    }
+
+    .visible_xxs{
+        display: flex;
+    }
+
+    .footer_app .row{
+        height: 70%;
     }
 }
 
