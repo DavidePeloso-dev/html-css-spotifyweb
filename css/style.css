@@ -508,14 +508,14 @@ img{
 /* #endregion */
 
 /* #region media query */
-@media screen and (max-width: 878px) {
+@media screen and (max-width: 1180px) {
     .col-md-3{
         min-width: calc(100% / 12 * 3);
     }
     
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 768px) {
     .col-sm-6{
         min-width: 50%;
     }
@@ -526,7 +526,7 @@ img{
     }
 }
 
-@media screen and (max-width: 552px) {  
+@media screen and (max-width: 576px) {  
     .app_content{
         width: calc(100% - 50px);
     }
@@ -583,12 +583,14 @@ img{
         padding: 0.5rem;
     }
 
-    .col-xs-12{
-        min-width: 100%;
-    }
-
     .for_you h2, .recent h2, .popular h2{
         font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .col-xs-12{
+        min-width: 100%;
     }
 }
 
