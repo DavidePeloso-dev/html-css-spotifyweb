@@ -236,7 +236,7 @@ img{
 .app_content{
     width: calc(100% - 230px);
 
-    & .recent{
+    & .recent .row,.popular .row, .for_you .row{
         overflow-x: auto;
         background-color: var(--primary-color);
 
@@ -283,10 +283,7 @@ img{
     padding: 1rem;
     flex-wrap: wrap;
     font-size: 0.8rem;
-    & li{
-        position: relative;
-    }
-
+   
     & a{
         font-weight: bold;
         color: var(--text-color);
@@ -566,6 +563,32 @@ img{
 
     .user, .download_app, .element_list, .logo, .menu_container{
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hide_xs{
+        display: none;
+    }
+
+    .col-xs-2{
+        width: calc(100% / 12 * 2);
+    }
+
+    .menu_left .album h3{
+        font-size: 0.6rem;
+    }
+
+    .menu_center{
+        padding: 0.5rem;
+    }
+
+    .col-xs-12{
+        min-width: 100%;
+    }
+
+    .for_you h2, .recent h2, .popular h2{
+        font-size: 1.25rem;
     }
 }
 
