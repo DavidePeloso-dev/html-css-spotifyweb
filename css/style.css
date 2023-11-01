@@ -592,6 +592,14 @@ img{
     .col-xs-12{
         min-width: 100%;
     }
+
+    .main_header .btn{
+        font-size: 0.8rem;
+
+        &:hover{
+            font-size: 1rem;
+        }
+    }
 }
 
 @media screen and (max-height: 221px) {
